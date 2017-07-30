@@ -3,10 +3,11 @@
       <title>TankBump</title>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel='stylesheet' type='text/css' href='assets/css/style.css' />
+      <script src="tankbump.js"></script>
    </head>
    <body>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="tankbump/assets/javascript/toggle.js"></script>
+      <!--<script src="tankbump/assets/javascript/toggle.js"></script>-->
       <div id="layer">
          <div class="row" id="main-row">
             <div class="col-md-3" id="side-bar">
@@ -18,7 +19,8 @@
                    </b>
                   </div>
                   <div class="drop-down">
-                     <select>
+                    <form name = "myForm">
+                     <select id = "vehicles" name = "selectVehicle">
                         <option value="99">Select a vehicle...</option>
                         <option value="hummer">Hummer</option>
                         <option value="tank">Tank</option>
@@ -42,7 +44,17 @@
                      Longitude: <input type="text" id="coord">
                      Latitude: <input type="text" id="coord">
                      <br>
-                     <input type="submit" value="Find Route" class="btn" id="route-btn">
+                     <input type="submit" onclick = "validateForm()" value="Find Route" class="btn" id="route-btn">
+                   </form>
+                     <script>
+                     function validateForm() {
+                      console.log("yes");
+                      vehSelected = document.getElementById("vehicles").value;
+                      console.log(vehSelected);
+                      assignVehSelected();
+                      checkRouteA();
+                     }
+                     </script>
                  </div>
                </div>
            </div>
@@ -52,7 +64,15 @@
       </div>
       <div>
       <div id="map-container">
-         <iframe style="height:100%; width:100%;" src="https://www.google.com/maps/d/u/0/embed?mid=1epPt4eicmSCnxYOjeclp612bSIw"></iframe>
+         <iframe style="height:100%; width:100%;" src="https://www.google.com/maps/d/u/0/embed?mid=1epPt4eicmSCnxYOjeclp612bSIw" id = "changeImage"></iframe>
+
+         <script>
+         ///needs to be fixed
+         function changeImage() {
+          document.getElementById("changeImage").src = imgToDisplay;
+
+         }
+         </script>
     </div>
    </html>
 </body>
