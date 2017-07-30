@@ -20,7 +20,9 @@ body{
 }
 #route-btn{
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  background-color:#4da6ff;
+  margin-left:7%;
   
 }
 
@@ -49,4 +51,10 @@ body{
 #layer{
   z-index: 1;
   position: absolute;
+}
+
+.drop-down{
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left: 30%
 }
