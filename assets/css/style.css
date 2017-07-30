@@ -1,25 +1,62 @@
 body{
-  
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 #side-bar{
-  background: #7CFC00;
+  background: #d9b38c;
   font-family: "Verdana";
   height: 100%;
-  position: absolute;
   top: 0;
   left: 0;
-  width: 25%;
+  -webkit-transition: margin 0.3s ease;
+  -moz-transition: margin 0.3s ease;
+  -o-transition: margin 0.3s ease;
+  transition: margin 0.3s ease;
+
   
 }
 #coord{
-  width: 75px;
+  width: 50px;
 }
 #route-btn{
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color:#999966;
+  margin-left:7%;
   
 }
 
 #toggle{
-  margin-left: 95%;
+  margin-left: 98%;
   padding-top:5px;
+  cursor: pointer;
 }
+
+.collapsed {
+        display: block;
+        margin-left: -22%; 
+    }
+
+#main-row {
+    overflow-x: hidden;
+}
+
+#map-container {
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#layer{
+  z-index: 1;
+  position: absolute;
+}
+
+.drop-down{
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left: 30%
+}
+
