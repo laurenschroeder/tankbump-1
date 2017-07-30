@@ -4,52 +4,55 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel='stylesheet' type='text/css' href='assets/css/style.css' />
    </head>
-   <script src="tankbump/assets/javascript/toggle.js"></script>
-   <div id="layer">
-      <div class="row" id="main-row">
-         <div class="col-md-3" id="side-bar">
-            <div>
-               <span id="toggle" class="glyphicon glyphicon-menu-left"></span>
-               <div style="padding-left:7px;">
-                  <b>
-                  Select a Vehicle
-                  </b>
-               </div>
-               <div class="drop-down">
-                  <select>
-                     <option value="99">Select a vehicle...</option>
-                     <option value="hummer">Hummer</option>
-                     <option value="tank">Tank</option>
-                     <option value="atv">ATV</option>
-                     <option value="missile">Mobile Missile</option>
-                  </select>
-               </div>
+   <body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="tankbump/assets/javascript/toggle.js"></script>
+      <div id="layer">
+         <div class="row" id="main-row">
+            <div class="col-md-3" id="side-bar">
                <div>
+                  <span id="toggle" class="glyphicon glyphicon-menu-left"></span>
                   <div style="padding-left:7px;">
-                     <b>Starting Coordinates</b>
+                     <b>
+                     Select a Vehicle
+                   </b>
                   </div>
+                  <div class="drop-down">
+                     <select>
+                        <option value="99">Select a vehicle...</option>
+                        <option value="hummer">Hummer</option>
+                        <option value="tank">Tank</option>
+                      <option value="atv">ATV</option>
+                        <option value="missile">Mobile Missile</option>
+                     </select>
+                  </div>
+                  <div>
+                     <div style="padding-left:7px;">
+                        <b>Starting Coordinates</b>
+                     </div>
+                     <div class="container">
+                        Longitude: <input type="text" id="coord">
+                        Latitude: <input type="text" id="coord">
+                    </div>
+                  </div>
+                  <div style="padding-left:7px;">
+                     <b>Destination Coordinates</b>
+                 </div>
                   <div class="container">
                      Longitude: <input type="text" id="coord">
                      Latitude: <input type="text" id="coord">
-                  </div>
+                     <br>
+                     <input type="submit" value="Find Route" class="btn" id="route-btn">
+                 </div>
                </div>
-               <div style="padding-left:7px;">
-                  <b>Destination Coordinates</b>
-               </div>
-               <div class="container">
-                  Longitude: <input type="text" id="coord">
-                  Latitude: <input type="text" id="coord">
-                  <br>
-                  <input type="submit" value="Find Route" class="btn" id="route-btn">
-               </div>
-            </div>
-         </div>
-         <span id="toggle" class="glyphicon glyphicon-menu-left"></span>
+           </div>
+          <span id="toggle" class="glyphicon glyphicon-menu-left"></span>
+       </div>
       </div>
-   </div>
-   </div>
-   <div>
-   <div id="map-container">
-      <iframe style="height:100%; width:100%;" src="https://www.google.com/maps/d/u/0/embed?mid=1epPt4eicmSCnxYOjeclp612bSIw"></iframe>
-   </div>
-</html>
+      </div>
+      <div>
+      <div id="map-container">
+         <iframe style="height:100%; width:100%;" src="https://www.google.com/maps/d/u/0/embed?mid=1epPt4eicmSCnxYOjeclp612bSIw"></iframe>
+    </div>
+   </html>
+</body>
