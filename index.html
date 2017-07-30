@@ -4,33 +4,44 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
       <link rel='stylesheet' type='text/css' href='assets/css/style.css' />
    </head>
-   <div id="side-bar">
-   <div>
-      <span id="toggle" class="glyphicon glyphicon-menu-left"></span>
-      <p>
-         Select a Vehicle
-      </p>
-      <div class="container" id="vehicle-select">
-      </div>
-   </div>
-   <div>
-      <!-- insert collapsible info -->
-   </div>
-   <div>
-      Starting Coordinates
-      <div class="container">
-         Longitude: <input type="text" id="coord">
-         Latitude: <input type="text" id="coord">
-      </div>
-      <div>
-         Destination Coordinates
-         <div class="container">
-            Longitude: <input type="text" id="coord">
-            Latitude: <input type="text" id="coord">
+   <div id="layer">
+      <div class="row" id="main-row">
+         <div class="col-md-3" id="side-bar">
+            <div>
+               <span id="toggle" class="glyphicon glyphicon-menu-left"></span>
+               <p>
+                  Select a Vehicle
+               </p>
+               <div class="container" id="vehicle-select">
+               </div>
+            </div>
+            <div>
+               <!-- insert collapsible info -->
+            </div>
+            <div>
+               Starting Coordinates
+               <div class="container">
+                  Longitude: <input type="text" id="coord">
+                  Latitude: <input type="text" id="coord">
+               </div>
+               <div>
+                  Destination Coordinates
+                  <div class="container">
+                     Longitude: <input type="text" id="coord">
+                     Latitude: <input type="text" id="coord">
+                  </div>
+               </div>
+               <div align="center">
+                  <button class="btn" style="background-color:#4da6ff"id="route-btn">Find Routes</button>
+               </div>
+            </div>
          </div>
+         <span id="toggle" class="glyphicon glyphicon-menu-left"></span>
       </div>
-      <div align="center">
-         <button class="btn" style="background-color:#4da6ff"id="route-btn">Find Routes</button>
-      </div>
+   </div>
+   </div>
+   <div>
+   <div id="map-container">
+      <iframe style="height:100%; width:100%;" src="https://www.google.com/maps/d/u/0/embed?mid=1epPt4eicmSCnxYOjeclp612bSIw"></iframe>
    </div>
 </html>
