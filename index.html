@@ -12,27 +12,28 @@
                <p>
                   Select a Vehicle
                </p>
-               <div class="container" id="vehicle-select">
-               </div>
-            </div>
-            <div>
-               <!-- insert collapsible info -->
-            </div>
-            <div>
-               Starting Coordinates
-               <div class="container">
-                  Longitude: <input type="text" id="coord">
-                  Latitude: <input type="text" id="coord">
+               <div class="drop-down">
+                  <select>
+                     <option value="99">Select a vehicle...</option>
+                     <option value="hummer">Hummer</option>
+                     <option value="tank">Tank</option>
+                     <option value="atv">ATV</option>
+                     <option value="missile">Mobile Missile</option>
+                  </select>
                </div>
                <div>
-                  Destination Coordinates
+                  Starting Coordinates
                   <div class="container">
                      Longitude: <input type="text" id="coord">
                      Latitude: <input type="text" id="coord">
                   </div>
                </div>
-               <div align="center">
-                  <button class="btn" style="background-color:#4da6ff"id="route-btn">Find Routes</button>
+               Destination Coordinates
+               <div class="container">
+                  Longitude: <input type="text" id="coord">
+                  Latitude: <input type="text" id="coord">
+                  <br>
+                  <input type="submit" value="Find Routes" class="btn" id="route-btn">
                </div>
             </div>
          </div>
