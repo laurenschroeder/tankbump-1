@@ -3,7 +3,7 @@ body{
   width: 100%;
 }
 #side-bar{
-  background: #7CFC00;
+  background: #d9b38c;
   font-family: "Verdana";
   height: 100%;
   top: 0;
@@ -19,9 +19,9 @@ body{
   width: 50px;
 }
 #route-btn{
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 30px;
-  background-color:#4da6ff;
+  background-color:#999966;
   margin-left:7%;
   
 }
@@ -58,3 +58,4 @@ body{
   margin-bottom:10px;
   margin-left: 30%
 }
+
