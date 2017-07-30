@@ -1,0 +1,25 @@
+body{
+  
+}
+#side-bar{
+  background: #7CFC00;
+  font-family: "Verdana";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  
+}
+#coord{
+  width: 75px;
+}
+#route-btn{
+  margin-top: 50px;
+  
+}
+
+#toggle{
+  margin-left: 95%;
+  padding-top:5px;
+}
